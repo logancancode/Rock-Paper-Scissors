@@ -2,8 +2,8 @@ const playerPrompt = "Rock, Paper, or Scissors?" ;
 const choice = [null, "rock", "paper", "scissors"];
 const winMessage = "You win!" ; 
 const lossMessage = "You lose;" ;
-const min = 0
-const max = 2
+let playerScore = 0;
+let computerScore = 0;
 
 const playerSelection = prompt(playerPrompt).toLowerCase();
 console.log("You chose " + playerSelection + ".");
@@ -29,5 +29,5 @@ function playRound(playerSelection, computerSelection) {
     else return "You didn't enter a valid choice. Try again!";
     }
 
-let roundResult = playRound(playerSelection, computerSelection);
-console.log(roundResult);
+let roundMessage = (playRound(playerSelection, computerSelection))
+console.log(roundMessage);
